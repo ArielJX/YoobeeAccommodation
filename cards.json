@@ -28,7 +28,7 @@
       "minStay": 1,
       "maxStay": 5,
       "roomType": "Superior King Room with Harbour View",
-      "imgUrl": "json/hotel1.jpg"
+      "imgUrl": "./json/hotel1.jpg"
     },
     {
       "id": "2",
@@ -58,7 +58,7 @@
       "minStay": 1,
       "maxStay": 5,
       "roomType": "Two Queen Beds - Habitat",
-      "imgUrl": "json/hotel2.jpg"
+      "imgUrl": "./json/hotel2.jpg"
     },
     {
       "id": "3",
@@ -84,7 +84,7 @@
       "minStay": 2,
       "maxStay": 15,
       "roomType": "Three-Bedroom Apartment",
-      "imgUrl": "json/house1.jpg"
+      "imgUrl": "./json/house1.jpg"
     },
     {
       "id": "4",
@@ -112,7 +112,7 @@
       "minStay": 2,
       "maxStay": 15,
       "roomType": "Apartment with Sea View",
-      "imgUrl": "json/house2.jpg"
+      "imgUrl": "./json/house2.jpg"
     },
     {
       "id": "5",
@@ -143,7 +143,7 @@
       "minStay": 3,
       "maxStay": 10,
       "roomType": "Classic Studio",
-      "imgUrl": "json/motel1.jpg"
+      "imgUrl": "./json/motel1.jpg"
     },
     {
       "id": "6",
@@ -192,7 +192,7 @@
       "minStay": 3,
       "maxStay": 10,
       "roomType": "Standard Studio",
-      "imgUrl": "json/motel2.jpg"
+      "imgUrl": "./json/motel2.jpg"
     },
     {
       "id": "7",
@@ -224,7 +224,7 @@
       "minStay": 1,
       "maxStay": 10,
       "roomType": "One bed",
-      "imgUrl": "json/hostel1.jpg"
+      "imgUrl": "./json/hostel1.jpg"
     },
     {
       "id": "8",
@@ -251,7 +251,7 @@
       "minStay": 1,
       "maxStay": 10,
       "roomType": "One bed",
-      "imgUrl": "json/hostel2.jpg"
+      "imgUrl": "./json/hostel2.jpg"
     }
   ],
   "categories": [

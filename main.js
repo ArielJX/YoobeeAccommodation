@@ -9,7 +9,7 @@ const modal = document.querySelector("#modal");
 
 
 async function fetchCardJson() {
-  const response = await fetch("cards.json");
+  const response = await fetch("./cards.json");
   const data = await response.json();
   cardArray = data.cards;
   categoryArray = data.categories;
