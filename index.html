@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <!-- <link rel="stylesheet" href="media-query.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr" defer></script>
+  <script src="https://kit.fontawesome.com/b3a54bd955.js" crossorigin="anonymous"></script>
+  <script src="./main.js" defer></script>
+  <title>YOOSTAY</title>
+</head>
+
+<body>
+
+  <nav>
+    <header>
+      <img src="./img/white-logo.png" alt="" class="logo">
+      <div class="seach-box">
+        <input type="text" id="search-input" placeholder="Search">
+        <button id="search-button" type="submit"><i class="fas fa-search"></i></button>
+      </div>
+    </header>
+    <header class="sticky">
+      <img src="./img/white-logo.png" alt="" class="logo">
+      <div class="sticky-filter">
+        <select name="category" id="sticky-categories"></select>
+        <!-- <div class="seach-box">
+          <input type="text" id="search-input" placeholder="Search">
+          <button id="search-button" type="submit"><i class="fas fa-search"></i></button>
+        </div> -->
+        <div class="flatpickr">
+          <input type="nsumber" id="group-days" class="datepicker" placeholder="Select Date.." data-input>
+          <span id="group-size-indicator"></span>
+        </div>
+      </div>
+
+    </header>
+
+    <div class="header-container">
+      <div class="header-container_text">
+        <h1>Kia Ora,
+          <br>Welcome to New Zealand
+        </h1>
+        <p>Discover New Zealand’s unique and beautiful landscapes, vibrant culture and authentic experiences when you
+          come for a
+          luxury stay.</p>
+      </div>
+
+      <div class="header-container_filter">
+        <select name="category" id="categories">
+          <!-- <option value="hotel">Hotel</option> -->
+        </select>
+        <div class="flatpickr">
+          <input type="nsumber" id="group-days" class="datepicker" placeholder="Select Date.." data-input>
+          <span id="group-size-indicator"></span>
+        </div>
+      </div>
+      <div class="result"></div>
+    </div>
+
+  </nav>
+
+  <div class="overlay">
+    <h2>Find Your Stay in Pure New Zealand </h2>
+    <div class="options">
+      <div class="option" data-value="1">
+        <div class="crop"><img src="/img/hotel-card.jpg" alt="Hotel Card"></div>
+        <h3>HOTEL</h3>
+      </div>
+      <div class="option" data-value="2">
+        <div class="crop"><img src="/img/house-card.jpg" alt="House Card"></div>
+        <h3>HOUSE</h3>
+      </div>
+      <div class="option" data-value="3">
+        <div class="crop"><img src="/img/motel-card.jpg" alt="Motel Card"></div>
+        <h3>MOTEL</h3>
+      </div>
+      <div class="option" data-value="4">
+        <div class="crop"><img src="/img/hostel-card.jpg" alt="Hostel Card"></div>
+        <h3>HOSTEL</h3>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="accommodation-cards">
+    </div>
+  </main>
+
+  <div class="modal hidden" id="modal"></div>
+
+  <footer>
+    <div class="row">
+      <div class="col">© 2022 YOOSTAY</div>
+      <div class="col">Privacy</div>
+      <div class="col">About</div>
+      <div class="col">Support</div>
+    </div>
+  </footer>
+
+
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+  <script>
+
+    var roomValue;
+    var mealValue;
+    function roomAmount() {
+      // newValue = document.getElementById("room-type").value;
+      // numberOfData = document.getElementsByName('numberOfData').textContent
+      // const roomValue = newValue * numberOfData;
+      roomValue = document.getElementById("room-type").value;
+      add();
+    }
+
+    function mealAmount() {
+      mealValue = document.getElementById("meals").value;
+      add();
+    }
+
+    function add(obj) {
+      const x = parseInt(roomValue);
+      const y = parseInt(mealValue);
+      const sum = x + y;
+      var obj = document.getElementById('tot_amount');
+      obj.value = sum;
+    }
+
+    function alertAndDisappear(){
+      alert("Your booking is confirmed.");
+    }
+  </script>
+
+</body>
+
+
+</html>
